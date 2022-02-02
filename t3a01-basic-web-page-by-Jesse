@@ -29,4 +29,17 @@ allow="accelerometer; autoplay; encrypted-media, gyroscope; picture-in-picture" 
   }">
   <input type=button value="1. Input/Output" onclick="{
     document.getElementById('myDiv01').innerHTML = 'Input adffgdsfsgsdfdfg<br>'
-    
+    +'sdfg<br>sdgf<br>output is...'
+  }">
+<input type=button value="4. Decisions" onclick="{
+  document.getElementsById('myDiv01').innerHTML = '
+  false variable decisions<br>
+ <pre>
+ 
+ '}"><br>
+ You do: 2:variables, 3:loops, 5:functions, 6:events, 7:arrays, 8:objects, 9:classes<br>
+ 
+ 
+ <div id="myDiv01">...</div>
+ <body>
+ </html>
