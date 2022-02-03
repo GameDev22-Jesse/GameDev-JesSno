@@ -37,7 +37,7 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pic
   </ul>
 
 <input type=button value="0. Pseudo Code" onclick="{
-  document.getElementById('myDiv01').innerHTML = "Hello don\'t World'
+  document.getElementById('myDiv01').innerHTML = 'Hello don\'t World'
   }">
   
   <input type=button value="2. Input/Output" onclick="{
@@ -50,7 +50,7 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pic
   false variable decisions<br>
  <pre>
  if (hour < 18) {
-  greeting = \ 'Good Day\';
+  greeting = \'Good Day\';
   }
   </pre>
  
