@@ -3,7 +3,7 @@
 <title> Basic webstuff</title> 
 </head> 
 <body> 
-<h5>Version 0.0.1</h5> 
+<h5>Version 0.0.3.06</h5> 
 
 <h1 align=center>t3a01-basic-web-page-by-Jesse.html </h1>
 
@@ -46,7 +46,7 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pic
   }">
   
 <input type=button value="4. Decisions" onclick="{
-  document.getElementsById('myDiv01').innerHTML = `
+  document.getElementById('myDiv01').innerHTML = `
   Decisions use the if statement to make true
   false variable decisions<br>
  <pre>
