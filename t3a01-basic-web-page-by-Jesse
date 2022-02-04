@@ -3,7 +3,7 @@
 <title> Basic webstuff</title> 
 </head> 
 <body> 
-<h5>Version 0.0.3.06</h5> 
+<h5>Version 0.0.3.07</h5> 
 
 <h1 align=center>t3a01-basic-web-page-by-Jesse.html </h1>
 
@@ -41,8 +41,8 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pic
   }">
   
   <input type=button value="2. Input/Output" onclick="{
-    document.getElementById('myDiv01').innerHTML = 'Input I told you...<br>'
-    +'stop.<br>pressing<br><b>THE BUTTON</b>'
+    document.getElementById('myDiv01').innerHTML = 'I told you...<br>'
+    +'stop...<br>pressing...<br><b>THE BUTTON</b>'
   }">
   
 <input type=button value="4. Decisions" onclick="{
