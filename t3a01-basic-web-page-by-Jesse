@@ -5,7 +5,7 @@
 <body
 background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqpDAYPTIueD88WXVz75GmaCAyQVj4wTmg8g&usqp=CAU"> 
 
-<h5>Version 0.0.4.08</h5> 
+<h5>Version 0.0.5.09</h5> 
 
 <h1 align=center>t3a01-basic-web-page-by-Jesse.html </h1>
 
@@ -26,16 +26,15 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pic
 
 <h3> Ellis' 9 main areas of coding </h3>
   <ul>
-  <li> I </li>
-  <li> am </li>
-  <li> not </li>
-  <li> entirely </li>
-  <li> sure </li>
-  <li> what </li> 
-  <li> they </li>
-  <li> could </li>
-  <li> potentially </li>
-  <li> be </li>
+  <li> Variables </li>
+  <li> Input/output </li>
+  <li> decision </li>
+  <li> Loop </li>
+  <li> Events </li>
+  <li> Array </li> 
+  <li> Functions </li>
+  <li> Structs/Objects </li>
+  <li> Classes/object </li>
   </ul>
 
 <input type=button value="0. Pseudo Code" onclick="{
@@ -62,5 +61,5 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pic
  
  
  <div id="myDiv01">...</div>
- <body>
+ </body>
  </html>
