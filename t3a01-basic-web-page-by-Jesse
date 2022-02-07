@@ -2,10 +2,10 @@
 <head> 
 <title> Basic webstuff</title> 
 </head> 
-<body
-background color="#89cca7"> 
+<style="background-color:#89cca7">
+<body> 
 
-<h5>Version 0.0.6.10</h5> 
+<h5>Version 0.0.6.11</h5> 
 
 <h1 align=center>t3a01-basic-web-page-by-Jesse.html </h1>
 
