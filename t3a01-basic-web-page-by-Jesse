@@ -2,16 +2,18 @@
 <head> 
 <title> Basic webstuff</title> 
 </head> 
-<body> 
-<h5>Version 0.0.3.07</h5> 
+<body
+background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqpDAYPTIueD88WXVz75GmaCAyQVj4wTmg8g&usqp=CAU"> 
+
+<h5>Version 0.0.4.08</h5> 
 
 <h1 align=center>t3a01-basic-web-page-by-Jesse.html </h1>
 
-<a href="http://www.google.ca">Link to Google</a><br> 
-Plain Text <b> Bold </b> and <i> Italic </i> <b><i> Bold and Italic together</i></b> <br>
+<a href="https://www.mpsd.ca/Pages/default.aspx#/=">Link to the MPSD website</a><br> 
+Sometimes you just have to <i> let go </i> of all of those <b> bad </b> and <b> angry </b> thoughts and just... <b><i> release </i></b> <br>
 <hr> 
 This is a peaceful image <br> 
-<img width=200 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3lNwBeD1ufK7KxaGXptrrvIiyPltJ50HDpw&usqp=CAU"><br><br>
+<img width="400" height="400" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3lNwBeD1ufK7KxaGXptrrvIiyPltJ50HDpw&usqp=CAU"><br><br>
 
 This is a nice, high quality Youtube Embedded video <br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Xfks6jiS_iI" title="YouTube video player" frameborder="0" 
@@ -22,7 +24,7 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pic
 <span> this is a </span> 
 <span> span </span>
 
-<h3> Ellis' 10 main areas of coding </h3>
+<h3> Ellis' 9 main areas of coding </h3>
   <ul>
   <li> I </li>
   <li> am </li>
@@ -50,8 +52,8 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pic
   Decisions use the if statement to make true
   false variable decisions<br>
  <pre>
- if (hour < 18) {
-  greeting = \'Good Day\';
+ if (button press < 1) {
+  greeting = \'STOP PRESSING BUTTON\';
   }
   </pre>
  
