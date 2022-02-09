@@ -1,0 +1,76 @@
+<h5> version 0.0.2.00 </h5>
+
+<h1 align=center> t3a02-lists-and-tables-by-Jesse</h1>
+
+<h2> Lists </h2>
+
+<ul> Ordered list of favorite foods
+  <li> Chicken Strips (and Fries if combos are allowed)
+  <li> CornDogs
+  <li> Ratatouille 
+  <li> Yakitori
+  <li> Omelette 
+</ul>
+
+<ul> Unordered list of Countries
+  <li> Canada
+  <li> Norway
+  <li> Japan
+  <li> France
+  <li> Hawaii
+</ul>
+
+<b>Assignment</b>. Making a list inside of a list of multiple items. <br>
+<ul>
+  <li> Beastars
+    <ul> 
+    <li> Fictional
+    <li> Japanese Manga
+    <li> Fun to read
+    </ul>
+  <li> Dirk Gently's Hitchikers Guide To The Galaxy 
+    <ul>
+    <li> Phylisophical
+    <li> Mind engaging
+    <li> Fictional
+    </ul>
+  <li> Superstore
+    <ul>
+    <li> Realistic fiction
+    <li> Interesting
+    <li> Inspiring
+    </ul>
+</ul>
+
+<h2> Tables </h2>
+<table border=1>
+<tr> 
+<td> A </td> 
+<td> B </td>
+<tr>
+
+<tr>
+<td> 1 </td>
+<td> 2 </td> 
+</tr>
+</table> 
+<br>
+
+<b> Assignment </b> Making a 3x4 table, and a link and image table with a border = 0
+<br>
+<br>
+<br>
+
+<h2>Advanced</h2>
+Move the image 10 pixels to the left using the button below!
+
+<image id="myImage01" src="insert image link" style="position:relative; left:0; top:0; width:50; height:50;">
+<br>
+
+<input type=button value="Go Left" onclick="{
+  document.getElementById('myImage01').style.left = '200px' 
+  document.getElementById('myDiv01').innerHTML = 'It went left'
+}">
+
+
+<div id="myDiv01">...</div>
