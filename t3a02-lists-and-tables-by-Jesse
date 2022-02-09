@@ -1,4 +1,4 @@
-<h5> version 0.0.4.02 </h5>
+<h5> version 0.0.4.03 </h5>
 
 <h1 align=center> t3a02-lists-and-tables-by-Jesse</h1>
 
@@ -72,7 +72,7 @@ Book Reviews <br>
 
 <h2>Advanced</h2>
 Move the image 10 pixels to the left using the button below!
-
+<br>
 <image id="myImage01" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTqwjo0sxA-ykK29JsE7Y111Mzn7B9F6Wafg&usqp=CAU" 
 style="position:relative; left:0; top:0; width:200; height:200;">
 <br>
