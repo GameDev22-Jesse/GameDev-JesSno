@@ -1,16 +1,16 @@
-<h5> version 0.0.3.01 </h5>
+<h5> version 0.0.4.02 </h5>
 
 <h1 align=center> t3a02-lists-and-tables-by-Jesse</h1>
 
 <h2> Lists </h2>
 
-<ul> Ordered list of favorite foods
+<ol> Ordered list of favorite foods
   <li> Chicken Strips (and Fries if combos are allowed)
   <li> CornDogs
   <li> Ratatouille 
   <li> Yakitori
   <li> Omelette 
-</ul>
+</ol>
 
 <ul> Unordered list of Countries
   <li> Canada
@@ -21,7 +21,7 @@
 </ul>
 
 Book Reviews <br>
-<ul>
+<ol>
   <li> Beastars
     <ul> 
     <li> Fictional
@@ -40,7 +40,7 @@ Book Reviews <br>
     <li> Interesting
     <li> Inspiring
     </ul>
-</ul>
+</ol>
 
 <h2> Tables </h2>
 <table border=1>
@@ -59,27 +59,10 @@ Book Reviews <br>
 <b> Assignment </b> Making a 3x4 table, and a link and image table with a border = 0
 
 <table border=1>
-<tr> 
-<td> 1 </td>
-<td> 2 </td> 
-<td> 3 </td>
-<tr>
-
-<tr>
-<td> A </td>
-<td> B </td> 
-<td> C </td>
-</tr>
-<tr>
-<td> D </td>
-<td> E </td> 
-<td> F </td>
-</tr>
-<tr>
-<td> G </td>
-<td> H </td> 
-<td> I </td>
-</tr>
+<tr><td> 1 </td><td> 2 </td><td> 3 </td></tr>
+<tr><td> A </td><td> B </td><td> C </td></tr>
+<tr><td> D </td><td> E </td><td> F </td></tr>
+<tr><td> G </td><td> H </td><td> I </td></tr>
 </table> 
 <br>
 
@@ -91,7 +74,7 @@ Book Reviews <br>
 Move the image 10 pixels to the left using the button below!
 
 <image id="myImage01" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTqwjo0sxA-ykK29JsE7Y111Mzn7B9F6Wafg&usqp=CAU" 
-style="position:relative; left:0; top:0; width:50; height:50;">
+style="position:relative; left:0; top:0; width:200; height:200;">
 <br>
 
 <input type=button value="Go Left" onclick="{
