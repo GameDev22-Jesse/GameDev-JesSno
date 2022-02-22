@@ -10,11 +10,11 @@ version 0.0.1.1
   document.getElementById('myDiv01').innerHTML = myIn01 + ' squared = ' + myIn01*myIn01 
 </pre> 
 
-<h4> Example of working with code </h4> 
+<h4><u> Find your number squared </u></h4> 
 
-<input id="myNum01" type=number value="4" > <br> 
+<input id="myNum01" type=number value="4"> <br> 
 
-<input type=button value="myEvent squares" onclick="{ 
+<input type=button value="Square the number" onclick="{ 
   let myIn01 = parseFloat(document.getElementById('myNum01').value)
   let myAnswer = myIn01 * myIn01
   document.getElementById('myDiv01').innerHTML = 
@@ -23,3 +23,24 @@ version 0.0.1.1
 <br>
 
 <div id="myDiv01">...</div> 
+<br><br>
+
+<h4><u> Find your number multiplied </u></h4> 
+
+<input id="myNum02" type=number value="5"> <br>
+
+<input type=button value="Multiply by 5" onclick="{
+  let myIn02 = parseFloat(document.getElementById('myNum02').value)
+  let myAnswer = myIn02 * 5
+  document.getElementById('myDiv02').innerHTML = 
+    myIn02 + ' multiplied = ' + myAnswer
+}">
+<br>
+
+<div id="myDiv02">...</div>
+<br><br>
+
+<h4><u> Minus a number by 1 </u></h4>
+
+<input type=button value="Subtract 1" onclick="{
+  let myIn03 = parseFloat(document
