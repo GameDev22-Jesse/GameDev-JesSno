@@ -43,4 +43,12 @@ version 0.0.1.1
 <h4><u> Minus a number by 1 </u></h4>
 
 <input type=button value="Subtract 1" onclick="{
-  let myIn03 = parseFloat(document
+  let myIn03 = parseFloat(document.getElementById('myNum03').value)
+  let myAsnwer = myIn03 * 11
+  document.getElementById('myDiv03').innerHTML = 
+    myIn03 + ' subtract = ' + myAnswer
+}">
+<br>
+
+<div id="myDiv02">...</div> 
+<br><br>
