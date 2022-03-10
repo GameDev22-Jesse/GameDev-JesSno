@@ -2,47 +2,61 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
-    height: 78%
+    width:90%;
+    height:65%
   }
   .img2 {
     display: block;
-    margin-left: 65px;
+    margin-left:65px;
     margin-right: auto;
-    width: 50%;
-    height: 65%
+    width:50%;
+    height:65%
   }
   .img3 {
     display: block;
-    margin-left: 65px;
+    margin-left:65px;
     margin-right: auto;
-    width: 55%;
-    height: 65%
+    width:55%;
+    height:65%
   }
   .img4 {
     display: block;
-    margin-left: 65px;
+    margin-left:65px;
     margin-right: auto;
-    width: 55%;
-    height: 75%
+    width:55%;
+    height:75%
   }
   .img5 {
     display: block;
-    margin-left: 65px;
+    margin-left:65px;
     margin-right: auto;
-    width: 55%;
-    height: 65%
+    width:55%;
+    height:65%
   }
 
   #div1 {
     margin-left:65px;
+      font-family: Verdana, sans-serif;
   }
-  #div2 {
-    margin-left:65px;
+  
+
+  h1.title {
+    font-family: 'Courier New', monospace;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:70%;
+    height:65%
   }
-  #div3 {
+
+
+  h2.subtitle {
     margin-left:65px;
+    font-family: 'Courier New', monospace;
   }
-  #div4 {
-    margin-left:65px;
+
+
+  body {
+    background-color: #93b9bf; 
+    background-image: linear-gradient(#93b9bf, #7163db, #a77bd4, #63db8b);
   }
