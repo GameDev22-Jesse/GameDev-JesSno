@@ -1,4 +1,4 @@
-version 0.0.1.0
+version 1.1.2.03
 
 <h2 align center>t3a07-decisions-by-Jesse.html</h2> 
 
@@ -20,25 +20,36 @@ if (myHour < 18) {
 
 <input type=button value="Simple if statment for Decision Making" onclick="{
   let myIn01 = parseFloat(document.getElementById('myNum01').value) 
-  if (myIn01 >=3){
+  if (myIn01 >=4){
     document.getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 3'
   }
 }"> 
 
+<div id="myDiv01">...</div> 
+<hr> 
+
+<input id="myNum02" type=number value="4"> <br>
+
 <input type=button value="if...else" onclick="{ 
-  let myIn01 = parseFloat(document.getElementById('myNum01').value)
-  if (myIn01 >=3){
-    document.getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 3' 
-  } else {
-    document.getElementById('myDiv01').innerHTML = myIn01 + ' is less than 3'}
+  let myIn02 = parseFloat(document.getElementById('myNum02').value)
+  if (myIn02 >=3){
+    document.getElementById('myDiv02').innerHTML = myIn02 + ' is greater than 3' 
+  } 
+  else {
+    document.getElementById('myDiv02').innerHTML = myIn02 + ' is less than 3'}
 }"> 
+
+<div id="myDiv02">...</div> 
+<hr>
+
+<input id="myNum03" type=number value="4"> <br>
 
 <input type=button value="Complex if" onclick="{ 
-  let myIn01 = parseFloat(document.getElementById('myNum01').value) 
-  if (myIn01 >=3){
-    document. getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 3' 
+  let myIn03 = parseFloat(document.getElementById('myNum03').value) 
+  if (myIn03 >=4){
+    document. getElementById('myDiv03').innerHTML = myIn03 + ' is greater than 3' 
   } else {
-    document.getElementById('myDiv01').innerHTML = myIn01 + ' is not complex'}
+    document.getElementById('myDiv03').innerHTML = myIn03 + ' is not complex'}
 }"> 
 
-<div id="myDiv01">...</div> 
+<div id="myDiv03">...</div> 
