@@ -1,0 +1,23 @@
+
+<h1 align=center>t4a06-spy-by-Jesse.html </h1> 
+<textarea id="myArea01" rows=4 cols=70> Hello. How are you? </textarea><br>
+
+
+<input type=button value="encrypt" onclick="{
+  let myTemp = ''
+  myString = document.getElementById('myArea01').value.toLoweCase().split('')
+  for (let myLoop=0; myLoop < myString.length; myLoop++){ 
+    myTemp = myString[myLoop]
+    if (myString[myLoop] == 'e') {myTemp = 'f'}
+    if (myString[myLoop] == 'h') {myTemp = 'i'}
+    myString[myLoop] = myTemp
+   }
+   document.getElementById('myArea02').value = mystring.join('')
+}"><br><br> 
+
+
+
+<textarea id="myArea02" rows=4 cols=70></textarea><br>
+
+<input type=button value="decrypt" onclick="{
+  
