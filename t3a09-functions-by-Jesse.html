@@ -1,19 +1,22 @@
 <script>
-  
-  function myExampleFunction(){
+  function myExampleFunction1(){
   let myIn01 = parseInt(document.getElementById('myText01').value)
   let mySum = myIn01 + myIn01
   let myReply = myIn01 + ' + ' + myIn01 + ' = ' + mySum
   return myReply
-  
   }
-  
+  function myExampleFunction2(){
+  let myIn02 = parseInt(document.getElementById('myText02').value)
+  let mySum = myIn02 * myIn02
+  let myReply = myIn02 + ' x ' + myIn02 + ' = ' + mySum
+  return myReply
+  }
 </script>
 
-version 0.0.1.01
+version 1.1.2.05
 
 <h2 align=center>t3a09-functions-by-Jesse.html</h2> 
-
+<hr>
 <a href="https://www.w3schools.com/js/js_functions.asp"> Good reference to Javascript functions </a>
 <br>
 
@@ -26,14 +29,22 @@ function myGrabNumber(){
   return parseInt(document.getElementById('myText01').value)
 }
 </pre>
-
+<br>
+<hr>
 <h4>Example working code</h4>
 
 <input type=text id="myText01" value="3"> 
 <br>
-
-<input type=button value="Function Example" onClick="{
-  document.getElementById('myDiv01').innerHTML = myExampleFunction()
-}">
-
+<input type=button value="Add the number to itself" onClick="{
+  document.getElementById('myDiv01').innerHTML = myExampleFunction1()
+}"><br>
 <div id="myDiv01">...</div> 
+<br>
+
+<input type=text id="myText02" value="20"> 
+<br>
+<input type=button value="Multiply the number by itself" onClick="{ 
+  document.getElementById('myDiv02').innerHTML = myExampleFunction2()
+}"><br>
+<div id="myDiv02">...</div> 
+<br>
