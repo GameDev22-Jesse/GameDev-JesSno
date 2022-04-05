@@ -1,0 +1,41 @@
+version 1.0.2.1
+
+<h2 align=center>t3a05 input-output by Jesse.html</h2> 
+
+<a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp"> Good refrence to input output Javascript innerHTML value by Jesse </a> 
+
+<h4> Example of input output code</h4> 
+<pre>
+  let myIn01 = document.getElementById('myNum01').value 
+  document.getElementById('myDiv01').innerHTML = myIn01 + ' squared = ' + myIn01*myIn01 
+</pre> 
+
+<h4><u> Find your number squared </u></h4> 
+
+<input id="myNum01" type=number value="4"> <br> 
+
+<input type=button value="Square the number" onclick="{ 
+  let myIn01 = parseFloat(document.getElementById('myNum01').value)
+  let myAnswer = myIn01 * myIn01
+  document.getElementById('myDiv01').innerHTML = 
+    myIn01 + ' squared = ' + myAnswer
+}">
+<br>
+
+<div id="myDiv01">...</div> 
+<br><br>
+
+<h4><u> Find your number multiplied </u></h4> 
+
+<input id="myNum02" type=number value="5"> <br>
+
+<input type=button value="Multiply by 5" onclick="{
+  let myIn02 = parseFloat(document.getElementById('myNum02').value)
+  let myAnswer = myIn02 * 5
+  document.getElementById('myDiv02').innerHTML = 
+    myIn02 + ' multiplied = ' + myAnswer
+}">
+<br>
+
+<div id="myDiv02">...</div>
+<br><br>
