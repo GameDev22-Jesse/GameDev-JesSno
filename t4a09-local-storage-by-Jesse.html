@@ -1,0 +1,48 @@
+<h2>t4a09-local-storage-by-Jesse. <br><h2>
+
+<body onload="{
+  myStorage = localStorage.getItem('myStoredText1')
+  if(myStorage !=null){
+    document.getElementById('myText1').value = myStorage 
+  }
+}"> 
+  
+<body onunload="{
+  localStorage.setItem('myStoredText',document.getElementById('myText1').value)
+}"> 
+  
+Save your text! -> <input id="myText1" type=text size=70 value="" placeholder="Write here to store"><br>
+  
+<input type="button" value="Store Text" onClick="{ 
+  localStorage.setItem('myStoredText1', document.getElementById('myText1').value)
+  alert(document.getElementById('myText1').value + ' \nHas been stored') 
+  document.getElementById('myText1').value = ''
+}"> 
+  
+<input type="button" value="Retrieve Text" onClick="{ 
+  document.getElementById('myText1').value = localStorage.getItem('myStoredText1')
+}"> 
+  
+  
+<body onload="{
+  myStorage = localStorage.getItem('myStoredText2')
+  if(myStorage !=null){
+    document.getElementById('myText2').value = myStorage 
+  }
+}"> 
+  
+<body onunload="{
+  localStorage.setItem('myStoredText1',document.getElementById('myText2').value)
+}"> 
+  <br><br>
+Save more text! -> <input id="myText2" type=text size=70 value="" placeholder="Write here to store"><br>
+ 
+<input type="button" value="Store Text" onClick="{ 
+  localStorage.setItem('myStoredText2', document.getElementById('myText2').value)
+  alert(document.getElementById('myText2').value + ' \nHas been stored') 
+  document.getElementById('myText2').value = ''
+}"> 
+  
+<input type="button" value="Retrieve Text" onClick="{ 
+  document.getElementById('myText2').value = localStorage.getItem('myStoredText2')
+}"> 
