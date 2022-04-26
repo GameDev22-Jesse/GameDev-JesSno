@@ -1,28 +1,30 @@
 Version 1.2.1 <br>
 
-<body id="myBody" style="background-repeat:repeat; background-size: 80%" background src="https://bingvsdevportalprodgbl.blob.core.windows.net/demo-images/0a433416-8a16-466b-be23-b17c9bf05619.jpg" onkeydown="{
 
-  let myKey = event.key
-  // let myKey = String.toLowerCase(event.key)
-  document.getElementById('myDiv01').innerHTML = myKey
-  if (myKey == 'd') {
+<body id="myBody" style="background-repeat:repeat; background-size: 50%" background-image="url('https://bingvsdevportalprodgbl.blob.core.windows.net/demo-images/0a433416-8a16-466b-be23-b17c9bf05619.jpg')" onkeydown="{
+
   
-  
-  // clearInterval(myInterval)
-  // myInterval = setInterval(function(){
-  //  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
-  //  myCheckHit()
-  // } ,20) 
-  
-  // or do the following
-  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 7
-  myCheckHit()
-}
+   let myKey = event.key
+   //  let myKey = String.toLowerCase(event.key)
+   document.getElementById('myDiv01').innerHTML = myKey
+   if (myKey == 'd') {
+
+
+
+     // either uncomment
+     // clearInterval(myInterval)
+     // myInterval = setInterval(function(){
+     //    document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
+     //    myCheckHit()
+     // } ,20)
+     // or do the following
+      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 7
+      myCheckHit()
+   }
+
 
 
 // other "keysdown" here 
-                   
-                   
 }"> 
   
   <h1 align=center>t4a11-game-template-with-wasd-by-Jesse</h1>
@@ -33,20 +35,20 @@ Version 1.2.1 <br>
     //global variables here
     let myGlobalX = 0; 
     let myClock
-    let myInterval = 0; 
+    let myInterval=0; 
     
     //gobal functions here
 function myHitOther(my1,my2){ 
   left1 = parseInt(document.getElementById(my1).style.left) 
-  right1 = left + parseInt(document.getElementById(my1).style.width)
+  right1 = left1 + parseInt(document.getElementById(my1).style.width)
   top1 = parseInt(document.getElementById(my1).style.top)
   bottom1 = top1 + parseInt(document.getElementById(my1).style.height)
   
   left2 = parseInt(document.getElementById(my2).style.left) 
-  right2 = left + parseInt(document.getElementById(my2).style.width)
+  right2 = left2 + parseInt(document.getElementById(my2).style.width)
   top2 = parseInt(document.getElementById(my2).style.top)
   bottom2 = top2 + parseInt(document.getElementById(my2).style.height)
-  if ((right >= left2 ) &&
+  if ((right1 >= left2 ) &&
       (bottom1 >= top2 ) &&
       (left1 <= right2 ) &&
       (top1 <= bottom2 ) ){
@@ -73,8 +75,8 @@ function myCheckHit(){
 
 </script>
 
-<img id="myImg01" style="position:absolute; width:100px; height:80px; top:0px; left:50px;"  src="https://thumbs.dreamstime.com/b/rainbow-love-heart-background-red-wood-60045149.jpg">
-<img id="myImg02" style="position:absolute; width:100px; height:80px; top:0px; left:250px;" src="https://www.gettyimages.ca/gi-resources/images/500px/983794168.jpg">
+<img id="myImg01" style="position:absolute; width:100px; height:80px; top:100px; left:50px;"  src="https://thumbs.dreamstime.com/b/rainbow-love-heart-background-red-wood-60045149.jpg">
+<img id="myImg02" style="position:absolute; width:100px; height:80px; top:100px; left:250px;" src="https://www.gettyimages.ca/gi-resources/images/500px/983794168.jpg">
 
 <input type=button value="Auto Background Left" onclick="{
   clearInterval(myClock)
@@ -91,8 +93,10 @@ function myCheckHit(){
     
 <input type=button value="Image Right Fast Button" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
-  myCheckHit()     // checks for all collisions
+  myCheckHit() 
 }"><br><br>
 
 
 <div id="myDiv01" style="color:yellow">...</div>
+
+</body>
