@@ -1,12 +1,85 @@
-  
-<body>
+<link rel="stylesheet" href="style2.css">
 
+<div style="width: 100%; height: 100%;">
+    <img src="1.JPG" id="img1" style="float: left; width: 100%; height: 100%;">
+</div>
+
+<body id="myBody" 
+     onkeydown="{ 
+       let myKey = event.key
+   //move right
+   if (myKey == 'd') {
+      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 7
+      myCheckHit()
+   }
+   //move left
+   if (myKey == 'a') {
+      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + -7
+      myCheckHit()
+   }
+
+}">
+
+    
+    <div class="game">
+        <div class="character"></div>
+    </div>
 
 <script>
+    
+    //character movements testing
+    document.addEventListener('DOMContentLoaded', () => {
+    const player = document.querySelector('.character')
+    let isGoingRight = false
+    let isGoingLeft = false
+    let bottom = 0
+    let left = 5
+    
+    function slideLeft() {
+        if (isGoingRight) {
+            clearInterval(rightTimerId)
+            isGoingRight = false
+        }
+        isGoingLeft = true
+        leftTimerId = setInterval(function () {
+            console.log('going left')
+            left -=5
+            player.style.left = left + 'px'
+        },20)
+      }
+
+      function slideRight() {
+        if (isGoingLeft) {
+            clearInterval(leftTimerId)
+            isGoingLeft = false
+        }
+        isGoingRight = true
+        rightTimerId = setInterval(function () {
+            console.log('going right')
+            left +=5
+            player.style.left = left + 'px'
+        },20)
+      }
+
+
+    function control(e) {
+        if(e.key === 'd') {
+            slideRight() //if we press right 
+        } else if (e.key === 'a') {
+            slideLeft() // if we press left
+        } 
+    }
+    document.addEventListener('keydown', control)
+})
+    
+    
+    //game dev code
+   // global variables here
    let myGlobalX = 0
    let myClock
+   let myInterval=0;
 
-
+   // global functions here
 function myHitOther(my1,my2){
    left1   = parseInt(document.getElementById(my1).style.left)
    right1  = left1 + parseInt(document.getElementById(my1).style.width)
@@ -24,26 +97,21 @@ function myHitOther(my1,my2){
    }
 }
 
+
+function myCheckHit(){
+   if ( myHitOther('myImg01','myImg02') ){
+       //alert('you lose')  
+       document.getElementById('myImg01').style.left = '20px'  
+   }
+
+
+   // more if statements here like the above
+
+
+
+}  // end of myCheckHit()
+
+
 </script>
-       
-  
-<img id="myImg01" style="position:absolute; width:100px; height:80px; top:420px; left:50px;"  src="">
-
-<img id="myImg02" style="position:absolute; width:100px; height:80px; top:420px; left:250px;" src="">
-  
-<input type=button value="Go Left" onclick="{
-  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + -10 + 'px'
-  if ( myHitOther('myImg01','myImg02') ){  
-       document.getElementById('myImg01').style.left = '150px'
-   }
-}">
-  
-<input type=button value="Go Right" onclick="{
-  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
-  if ( myHitOther('myImg01','myImg02') ){  
-       document.getElementById('myImg01').style.left = '150px'
-   }
-}">
-
-
-</body>
+    
+<canvas id="myCanvas"></canvas> 
