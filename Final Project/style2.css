@@ -1,5 +1,4 @@
 canvas {
-    background-color: #ccc;
     opacity: 0.2;
     display: block;
     position: absolute; 
@@ -10,11 +9,18 @@ canvas {
     height: 80%;
 }
 
-.character {
-    background-color: red;
-    height: 70px;
-    width: 40px;
+.background {
+    position: relative; 
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.myImg01 {
     position: absolute;
-    bottom: 0px;
-    top: 69.4%;
-} 
+    top: 80%; 
+    left: 10px; 
+    height: 120px;
+    width: 80px;
+}
