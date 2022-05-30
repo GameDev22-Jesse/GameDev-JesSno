@@ -1,11 +1,11 @@
 <link rel="stylesheet" href="style2.css">
 
-<div style="width: 100%; height: 100%;">
-    <img src="1.JPG" id="img1" style="float: left; width: 100%; height: 100%;">
-</div>
+<img src="1.JPG" class="background">
+<img src="2.jpg" class="myImg01" id="myImg01">
 
 <body id="myBody" 
      onkeydown="{ 
+                
        let myKey = event.key
    //move right
    if (myKey == 'd') {
@@ -17,61 +17,15 @@
       document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + -7
       myCheckHit()
    }
-
 }">
 
-    
-    <div class="game">
-        <div class="character"></div>
-    </div>
 
 <script>
-    
-    //character movements testing
-    document.addEventListener('DOMContentLoaded', () => {
-    const player = document.querySelector('.character')
-    let isGoingRight = false
-    let isGoingLeft = false
-    let bottom = 0
-    let left = 5
-    
-    function slideLeft() {
-        if (isGoingRight) {
-            clearInterval(rightTimerId)
-            isGoingRight = false
-        }
-        isGoingLeft = true
-        leftTimerId = setInterval(function () {
-            console.log('going left')
-            left -=5
-            player.style.left = left + 'px'
-        },20)
-      }
+//an idea that was once here has since been destroyed beyond repair
+</script>
 
-      function slideRight() {
-        if (isGoingLeft) {
-            clearInterval(leftTimerId)
-            isGoingLeft = false
-        }
-        isGoingRight = true
-        rightTimerId = setInterval(function () {
-            console.log('going right')
-            left +=5
-            player.style.left = left + 'px'
-        },20)
-      }
-
-
-    function control(e) {
-        if(e.key === 'd') {
-            slideRight() //if we press right 
-        } else if (e.key === 'a') {
-            slideLeft() // if we press left
-        } 
-    }
-    document.addEventListener('keydown', control)
-})
     
+<script>
     
     //game dev code
    // global variables here
@@ -100,7 +54,6 @@ function myHitOther(my1,my2){
 
 function myCheckHit(){
    if ( myHitOther('myImg01','myImg02') ){
-       //alert('you lose')  
        document.getElementById('myImg01').style.left = '20px'  
    }
 
@@ -113,5 +66,6 @@ function myCheckHit(){
 
 
 </script>
+    
     
 <canvas id="myCanvas"></canvas> 
