@@ -1,0 +1,62 @@
+
+<body id="myBody" style="background-repeat:repeat; background-size: 72.5%;" background="level1.png" onkeydown="{ 
+       let myKey = event.key
+   //move right
+   if (myKey == 'd') {
+      document.getElementById('player').style.left = parseInt(document.getElementById('player').style.left) + 6
+      myCheckHit()
+   }
+   //move left
+   if (myKey == 'a') {
+      document.getElementById('player').style.left = parseInt(document.getElementById('player').style.left) - 6
+      myCheckHit()
+   }
+}">
+
+<script>
+
+   // global variables here
+   let myGlobalX = 0
+   let myClock
+   let myInterval=0;
+
+   // global functions here
+function myHitOther(my1,my2){
+   left1   = parseInt(document.getElementById(my1).style.left)
+   right1  = left1 + parseInt(document.getElementById(my1).style.width)
+   top1    = parseInt(document.getElementById(my1).style.top)   
+   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+   left2   = parseInt(document.getElementById(my2).style.left)
+   right2  = left2 + parseInt(document.getElementById(my2).style.width)
+   top2    = parseInt(document.getElementById(my2).style.top)   
+   bottom2 = top2   + parseInt(document.getElementById(my2).style.height)
+   if ((right1  >=  left2  ) &&      	   
+       (bottom1 >=  top2   ) &&
+       (left1   <=  right2 ) &&
+       (top1    <=  bottom2) ){
+       return true
+   }
+}
+
+function myCheckHit(){
+    if ( myHitOther('player','myCave') ){
+        location = 'level 2.html'
+   }
+    else if ( myHitOther('player','backgroundLeft') ){
+        document.getElementById('player').style.left = '3px'
+   }
+    else if ( myHitOther('player','backgroundRight') ){
+        document.getElementById('player').style.left = '1265px'
+   }
+}
+
+
+</script>
+
+<img id="backgroundLeft" style="position: absolute; top: 1px; left: 3px; height: 98%; width: 1px;" src="">
+<img id="backgroundRight" style="position: absolute; top: 1px; left: 1345px; height: 98%; width: 1px;" src="">
+    
+<img id="player" style="position: absolute; top: 82%; left: 12px; height: 80px; width: 80px;" src="2.jpg">
+<img id="myCave" style="position: absolute; top: 76%; left: 850px; height: 160px; width: 125px;" src="cave.png">
+
+</body>
