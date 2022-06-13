@@ -1,14 +1,14 @@
 
-<body id="myBody" style="background-repeat:repeat; background-size: 72.5%;" background="level1.png" onkeydown="{ 
+<body id="myBody" style="background-repeat:repeat-x; background-size: contain;" background="level1.png" onkeydown="{ 
        let myKey = event.key
    //move right
    if (myKey == 'd') {
-      document.getElementById('player').style.left = parseInt(document.getElementById('player').style.left) + 6
+      document.getElementById('player').style.left = parseInt(document.getElementById('player').style.left) + 6 
       myCheckHit()
    }
    //move left
    if (myKey == 'a') {
-      document.getElementById('player').style.left = parseInt(document.getElementById('player').style.left) - 6
+      document.getElementById('player').style.left = parseInt(document.getElementById('player').style.left) - 6 
       myCheckHit()
    }
 }">
@@ -43,20 +43,20 @@ function myCheckHit(){
         location = 'level 2.html'
     }
     else if ( myHitOther('player','backgroundLeft') ){
-        document.getElementById('player').style.left = '3px'
+        document.getElementById('player').style.left = '1%'
    }
     else if ( myHitOther('player','backgroundRight') ){
-        document.getElementById('player').style.left = '1265px'
+        document.getElementById('player').style.left = '1270px'
    }
 }
 
 
 </script>
 
-<img id="backgroundLeft" style="position: absolute; top: 1px; left: 3px; height: 570px; width: 1px;" src="">
-<img id="backgroundRight" style="position: absolute; top: 1px; left: 1345px; height: 570px; width: 1px;" src="">
-    
-<img id="player" style="position: absolute; top: 542px; left: 12px; height: 80px; width: 80px; background-color: forestgreen;" src="player.jpg">
-<img id="myCave" style="position: absolute; top: 463px; left: 850px; height: 160px; width: 125px;" src="cave.png">
+<img id="backgroundLeft" style="position: absolute; top: 0%; left: 0%; height: 99%; width: 0.5%;">
+<img id="backgroundRight" style="position: absolute; top: 0%; left: 1358px; height: 90%; width: 0.5%;">
+
+<img id="player" style="position: absolute; top: 82%; left: 1%; height: 80px; width: 80px; background-color: forestgreen;" src="player.jpg">
+<img id="myCave" style="position: absolute; top: 70%; left: 720px; height: 160px; width: 125px;" src="cave.png">
 
 </body>
