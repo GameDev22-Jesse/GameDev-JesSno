@@ -4,8 +4,8 @@
     .enemyClass {
         width: 50px; 
         height: 50px; 
-        left: 650px; 
-        top: 0px;
+        left: 50%; 
+        top: 0%;
         background-color: red;
         position: absolute; 
         animation-name: enemyMove;
@@ -16,14 +16,14 @@
     }
 
     @keyframes enemyMove {
-        0% {background-color: red; left: 650px; top: 0px;}
-        100% {background-color: red; left: 650px; top: 570px;}
+        0% {background-color: red; left: 50%; top: 0%;}
+        100% {background-color: red; left: 50%; top: 86.5%;}
     }
 </style>
 </head>
 
 
-<body id="myBody" style="background-repeat:repeat-x; background-size: 130%;" background="level2.png" onkeydown="{ 
+<body id="myBody" style="background-repeat:repeat-x; background-size: cover;" background="level2.png" onkeydown="{ 
        let myKey = event.key
    //move right
    if (myKey == 'd') {
@@ -67,20 +67,20 @@ function myCheckHit(){
         document.getElementById('player').style.left = '3px'
    }
     else if ( myHitOther('player','backgroundRight') ){
-        document.getElementById('player').style.left = '1270px'
+        document.getElementById('player').style.left = '1272px'
    }
     else if ( myHitOther('player','enemy') ){
-        document.getElementById('player').style.left = '12px'
+        document.getElementById('player').style.left = '1%'
    }
 }
 
 </script>
 
-<img id="backgroundLeft" style="position: absolute; top: 0; left: 3px; height: 570px; width: 1px;" src="">
-<img id="backgroundRight" style="position: absolute; top: 0; left: 1345px; height: 570px; width: 1px;" src="">
+<img id="backgroundLeft" style="position: absolute; top: 0%; left: 0%; height: 90%; width: 0.5%;">
+<img id="backgroundRight" style="position: absolute; top: 0%; left: 1358px; height: 90%; width: 0.5%;">
 
 
-<img id="player" style="position: absolute; top: 542px; left: 12px; height: 80px; width: 80px; background-color: forestgreen;" src="player.jpg">
+<img id="player" style="position: absolute; top: 82%; left: 1%; height: 80px; width: 80px; background-color: forestgreen;" src="player.jpg">
 
 <img id="enemy" class="enemyClass">
 
