@@ -45,11 +45,12 @@ function myCheckHit(){
     if ( myHitOther('player','backgroundLeft') ){
         document.getElementById('player').style.left = '3px'
    }
-    else if ( myHitOther('player','backgroundRight') ){
+    if ( myHitOther('player','backgroundRight') ){
         document.getElementById('player').style.left = '1272px'
    }
-    else if ( myHitOther('player','enemy') ){
-        document.getElementById('player').style.left = '1%'
+    if ( myHitOther('player','enemy') ){
+        document.getElementById('player').style.left = '20px'
+           alert('it has been hit!')
    }
     
     
