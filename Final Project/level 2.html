@@ -1,28 +1,4 @@
 
-<head>
-<style>
-    .enemyClass {
-        width: 50px; 
-        height: 50px; 
-        left: 50%; 
-        top: 0%;
-        background-color: red;
-        position: absolute; 
-        animation-name: enemyMove;
-        animation-duration: 4s; 
-        animation-iteration-count: infinite; 
-        animation-direction: alternate; 
-        animation-delay: 3s;
-    }
-
-    @keyframes enemyMove {
-        0% {background-color: red; left: 50%; top: 0%;}
-        100% {background-color: red; left: 50%; top: 86.5%;}
-    }
-</style>
-</head>
-
-
 <body id="myBody" style="background-repeat:repeat-x; background-size: cover;" background="level2.png" onkeydown="{ 
        let myKey = event.key
    //move right
@@ -35,14 +11,25 @@
       document.getElementById('player').style.left = parseInt(document.getElementById('player').style.left) - 6
       myCheckHit()
    }
-}">
+}"
+      onload="{
+    
+    clearInterval(myTimer01) 
+    clearInterval(myTimer01) 
+    myTimer02 = setInterval(function(){
+        document.getElementById('enemy').style.top = parseInt(document.getElementById('enemy').style.top) + myVerticalSpeed + 'px' 
+        myCheckHit()
+    }, 50)
+    }">
 
 <script>
 
    // global variables here
    let myGlobalX = 0
    let myClock
-   let myInterval=0;
+   let myTimer01 
+   let myTimer02
+   let myVerticalSpeed = 6
 
    // global functions here
 function myHitOther(my1,my2){
@@ -62,26 +49,40 @@ function myHitOther(my1,my2){
    }
 }
 
-function myCheckHit(){
+function myCheckHit(){   
+    
     if ( myHitOther('player','backgroundLeft') ){
         document.getElementById('player').style.left = '3px'
    }
-    else if ( myHitOther('player','backgroundRight') ){
-        document.getElementById('player').style.left = '1272px'
+    if ( myHitOther('player','backgroundRight') ){
+        location = 'level 3.html'
    }
-    else if ( myHitOther('player','enemy') ){
-        document.getElementById('player').style.left = '1%'
+    if ( myHitOther('player','enemy') ){
+        document.getElementById('player').style.left = '20px'
+        document.getElementById('enemy').style.top = '0px'
    }
+    
+    
+    //enemy bounce/movement
+    if (parseInt(document.getElementById('enemy').style.top) > window.innerHeight - document.getElementById('enemy').height){
+        myVerticalSpeed *= -1
+    }
+    
+    if (parseInt(document.getElementById('enemy').style.top) < -10) {
+        myVerticalSpeed = myVerticalSpeed * -1
+    }
+    
 }
 
 </script>
 
-<img id="backgroundLeft" style="position: absolute; top: 0%; left: 0%; height: 90%; width: 0.5%;">
-<img id="backgroundRight" style="position: absolute; top: 0%; left: 1358px; height: 90%; width: 0.5%;">
+
+<img id="backgroundLeft" style="position: absolute; top: 0px; left: 2px; height: 395px; width: 2px;">
+<img id="backgroundRight" style="position: absolute; top: 0px; left: 1352px; height: 655px; width: 0.5%;">
 
 
-<img id="player" style="position: absolute; top: 82%; left: 1%; height: 80px; width: 80px; background-color: forestgreen;" src="player.jpg">
+<img id="player" style="position: absolute; top: 550px; left: 20px; height: 80px; width: 80px; background-color: forestgreen;">
 
-<img id="enemy" class="enemyClass">
+<img id="enemy" style="width: 50px; height: 50px; left: 600px; top: 0px; background-color: red; position: absolute;">
 
 </body>
