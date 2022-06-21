@@ -2,6 +2,13 @@
 <head>
 
 <style>
+    .title {
+        color: white;
+        position: absolute;
+        top: 25%; 
+        left: 44.3%; 
+    }
+    
     .Start {
         color: black; 
         width: 130px; 
@@ -11,19 +18,46 @@
         position: absolute; 
         background-color: #717493;
         background-image: linear-gradient(#1a2541, #717493);
-        font-size: 30px;
+        font-size: 28px;
         border-radius: 4px; 
         transition-duration: 0.4s; 
     }
     .Start:hover {
         color: white; 
     }
+
+    .Controls {
+        color: black; 
+        width: 130px; 
+        height: 60px; 
+        top: 55%; 
+        left: 45%; 
+        position: absolute; 
+        background-color: #717493;
+        background-image: linear-gradient(#1a2541, #717493);
+        font-size: 28px;
+        border-radius: 4px; 
+        transition-duration: 0.4s; 
+    }
+    .Controls:hover {
+        color: white; 
+    }
     
-    .title {
-        color: white;
-        position: absolute;
-        top: 25%; 
-        left: 44.3%; 
+    .Levels {
+        color: black; 
+        width: 130px; 
+        height: 60px; 
+        top: 70%; 
+        left: 45%; 
+        position: absolute; 
+        background-color: #717493;
+        background-image: linear-gradient(#1a2541, #717493);
+        font-size: 28px;
+        border-radius: 4px; 
+        transition-duration: 0.4s; 
+    }
+    .Levels:hover {
+        color: white; 
     }
     
 </style>
@@ -33,8 +67,17 @@
 <body style="background-repeat:repeat; background-size: 99%;" background="menu screen.jpg">
 <h1 class="title">The Game</h1>
     
-<input type=button value="START" class="Start" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+<input type=button value="start" class="Start" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
 location = 'level 1.html'
 }">
+
+<input type=button value="controls" class="Controls" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+location = 'controls.html'
+}">
+
+<input type=button value="levels" class="Levels" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+location = 'levels.html'
+}">
+
 <p style="position: absolute; top: 80%; left: 46%; color: white; ">By Jesse Snow</p>
 </body>
