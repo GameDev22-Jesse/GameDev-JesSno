@@ -12,15 +12,13 @@
 }"
       onload="{
     
-    clearInterval(myTimer03) 
-    clearInterval(myTimer03) 
-    myTimer02 = setInterval(function(){
+    clearInterval(myTimer01) 
+    myTimer01 = setInterval(function(){
         document.getElementById('enemy1').style.top = parseInt(document.getElementById('enemy1').style.top) + myVerticalSpeed + 'px' 
         myCheckHit()
     }, 25)
                
-    clearInterval(myTimer03) 
-    clearInterval(myTimer03) 
+    clearInterval(myTimer02) 
     myTimer02 = setInterval(function(){
         document.getElementById('enemy2').style.top = parseInt(document.getElementById('enemy2').style.top) + myVerticalSpeed + 'px' 
         myCheckHit()
@@ -34,7 +32,6 @@
    let myClock
    let myTimer01 
    let myTimer02
-   let myTimer03
    let myVerticalSpeed = 6
 
    // global functions here
