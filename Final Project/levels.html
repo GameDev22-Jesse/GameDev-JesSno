@@ -1,0 +1,87 @@
+
+<head>
+
+<style>
+    .title {
+        color: white;
+        position: absolute;
+        top: 25%; 
+        left: 40%; 
+    }
+    
+    .Level1 {
+        color: black; 
+        width: 130px; 
+        height: 60px; 
+        top: 40%; 
+        left: 45%; 
+        position: absolute; 
+        background-color: #717493;
+        background-image: linear-gradient(#1a2541, #717493);
+        font-size: 28px;
+        border-radius: 4px; 
+        transition-duration: 0.4s; 
+    }
+    .Level1:hover {
+        color: white; 
+    }
+
+    .Level2 {
+        color: black; 
+        width: 130px; 
+        height: 60px; 
+        top: 55%; 
+        left: 45%; 
+        position: absolute; 
+        background-color: #717493;
+        background-image: linear-gradient(#1a2541, #717493);
+        font-size: 28px;
+        border-radius: 4px; 
+        transition-duration: 0.4s; 
+    }
+    .Level2:hover {
+        color: white; 
+    }
+
+    .Level3 {
+        color: black; 
+        width: 130px; 
+        height: 60px; 
+        top: 70%; 
+        left: 45%; 
+        position: absolute; 
+        background-color: #717493;
+        background-image: linear-gradient(#1a2541, #717493);
+        font-size: 28px;
+        border-radius: 4px; 
+        transition-duration: 0.4s; 
+    }
+    .Level3:hover {
+        color: white; 
+    }
+    
+</style>
+
+</head>
+
+<body style="background-repeat:repeat; background-size: 99%;" background="menu screen.jpg">
+<h1 class="title">The Game (Levels)</h1>
+    
+<input type=button value="Level 1" class="Level1" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+location = 'level 2.html'
+}">
+
+<input type=button value="Level 2" class="Level2" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+location = 'level 2.html'
+}">
+
+<input type=button value="Level 1" class="Level1" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+location = 'level 2.html'
+}">
+
+<input type=button value="Level 3" class="Level3" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+location = 'level 3.html'
+}">
+
+<p style="position: absolute; top: 80%; left: 46%; color: white; ">By Jesse Snow</p>
+</body>
