@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+<body style="background-color: black;">
+
+    <style>
+        .Hi {
+            animation-name: Hi_animation;
+            animation-duration: 3s;
+        }
+
+        @keyframes Hi_animation {
+            from {color: black;}
+            to {color: white;}
+        }
+
+        .Hi2 {
+            animation-name: Hi2_animation;
+            animation-duration: 4.5s;
+        }
+
+        @keyframes Hi2_animation {
+            0% {color: black;}
+            50% {color: black;}
+            100% {color: white;}
+        }
+
+        .Welcome {
+            animation-name: Welcome_animation;
+            animation-duration: 6s;
+        }
+
+        @keyframes Welcome_animation {
+            0% {color: black;}
+            50% {color: black;}
+            80% {color: black;}
+            100% {color: white;}
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            width: 400vw;
+            transform: rotate(90deg) translateY(-100vh);
+            transform-origin: top left;
+        }
+        .slide1 {
+            width: 210vh;
+            height: 100vw;
+            background-color: black;
+        }
+        .slide2 {
+            background-color: black;
+            width: 210vh;
+            height: 100vw;
+        }
+        .slide3 {
+            background-color: black;
+            width: 210vh;
+            height: 100vw;
+        }
+        .slide4 {
+            background-color: black;
+            width: 210vh;
+            height: 100vw;
+        }
+        .outer-wrapper {
+            width: 100vh;
+            height: 100vw;
+            transform: rotate(-90deg) translateX(-100vh);
+            transform-origin: top left;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            position: absolute;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+
+    <div class="outer-wrapper">
+        <div class="wrapper"> 
+
+            <div class="slide1">
+<h1 class="Hi" style="color: white; margin-left: 30px; margin-top: 30px; font-family: 'Courier New', Courier, monospace;"> Hi, </h1>
+<h1 class="Hi2" style="color: white; margin-left: 30px; margin-top: 1px; font-family: 'Courier New', Courier, monospace;"> my Name is Jesse! </h1><br>
+<h4 class="Welcome" style="color: white; margin-left: 30px; margin-top: 200; font-family: 'Courier New', Courier, monospace;">Welcome to my webpage</h4>
+<hr style="margin-top: 250px; width: 100vw;">
+</div>
+
+<div class="slide2">
+<p style="height: 350px; width: 500px; margin-left: 450px; margin-top: 100px; background-color: white; font-size: 20px; border-style: solid; border-color: white; border-radius: 5px; border-bottom: 5px;">
+Welcome to my webpage! <br>
+<br>
+I am a beginner webpage designer looking to increase my web developing skills. <br>
+<br>
+I hope you enjoy my webpage! 
+</p>
+<hr style="margin-top: 180px; width: 100vw;">
+</div>
+
+<div class="slide3">
+    <img src="https://gamedev22-jesse.github.io/GameDev-JesSno/photos with links/photography picture of webpage.png" style="width: 600; height: 400; margin-top: 60px; margin-left: 440px;"><br>
+    <p style="margin-top: 80px; margin-left: 380px; color: white;">Here is a webpage I designed for a Photography grade 12 assignment, I highly suggest checking out the full thing.</p><br>
+    <a href="https://gamedev22-jesse.github.io/GameDev-JesSno//Photography/Photography%202000%20to%202022%20Jesse%20Snow.html" style="margin-top: 90px; margin-left: 580px; color: white;">History and Impact of Photography: 2000 to 2022</a><br>
+    <hr style="margin-top: 23px; width: 100vw;">
+</div>
+
+<div class="slide4">
+    <p style="color: white; margin-top: 200; margin-left: 200px;">That is all for now, have a good day!<br>
+        (Keep in mind that this webpage is a work in progress)</p>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
