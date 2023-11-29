@@ -1,0 +1,47 @@
+<html><head> 
+        <meta charset="utf-8">
+        <title>Coding tools and basics for HTML</title>
+        <style type="text/css" id="operaUserStyle"></style></head>
+        <body> 
+            <h1> Make headings using &lt; h # &gt;  put a number from 1- 6 where the "#" is. 
+            put a "/" before the "h" when ending a heading </h1>
+            <h1>This is the first heading level</h1>
+            <h2>This is the second heading level</h2>
+            <h3>This is the third heading level</h3>
+            <h4>This is the fourth heading level</h4>
+            <h5>This is the fith heading level</h5>
+            <h6>This is the sixth heading level</h6>
+            <p> This is paragraph text. make it using &lt; p &gt;
+              <br>  make breaks (or move the line down, like this line of text) in the paragraph using &lt; br &gt; 
+              <br> end paragraphs with &lt; / p &gt;
+              <br> create lines on the page using &lt; hr &gt;
+            </p>
+            <hr>
+            <a href="https://www.google.com/"> To make links, put "&lt; a href=(then a link here (include the "" before and after the link) then &lt; / a &gt; to end the text </a> 
+            <ul>
+                <li>Type "&lt; u l &gt;" to make a list </li>
+                <li>Type "&lt; / u l &gt;" to end the list </li>
+                <li>"&lt; l i &gt;" followed by "&lt; / l i &gt;" at the end of the text makes a list item </li>
+                <li>The list item doesnt even need to be text</li>
+                <li>It can even be images!</li>
+            </ul>
+            <img src="C:\Users\Jesse\Downloads\pics\aloha jpg.jpg" height-40%="" width-40%="">
+            <p>You CAN make a button using HTML, but that would be more useful in JavaScript.
+            <br> it would be: &lt; button &gt; (text on button) &lt; / button &gt;</p>
+            <button> Click Me!</button>
+            <p>or... &lt; button onclick="alert('(text)');"&gt;(text) &lt; / button &gt; </p>
+            <button onclick="alert('wassup?');">click Me! </button> 
+            <p>to insert different types of things: &lt; input type = "(select your choice)" /&gt;
+            <br> here are some examples! </p>
+            <input placeholder="name" type="text">
+            <input type="file">
+            <input type="checkbox">
+        
+        <div> 
+            <h1> top text</h1>
+            <p> group things together in coding with &lt; div &gt; </p>
+        </div>
+            <h2> bottom text </h2>
+        <p>make words <b>bold</b> using &lt; b &gt; text &lt; / b &gt; or <i>itallic</i> using &lt; i &gt; text &lt; / i &gt; </p>
+        
+</body></html>
